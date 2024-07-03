@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+  @keyframes viewContent {
+    0% {
+        opacity: 0;
+        
+        
+    }
+    100% {
+        opacity: 1;
+        
+    }
+  }
+
+  .animate-view-content {
+  animation: viewContent 0.2s ease-in-out forwards;
+  }
