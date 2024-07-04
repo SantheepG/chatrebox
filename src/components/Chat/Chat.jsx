@@ -3,7 +3,8 @@ import { useEffect, useState, useRef } from "react";
 import ChatSelf from "../ui-components/ChatSelf";
 import ChatUser from "../ui-components/ChatUser";
 import { io } from "socket.io-client";
-const socket = io("ws://localhost:5000");
+// const socket = io("ws://localhost:5000");
+const socket = io('https://santheepg.pythonanywhere.com/');
 
 const Chat = ({ user, setUsers }) => {
   const [id, setID] = useState(null);
@@ -23,7 +24,9 @@ const Chat = ({ user, setUsers }) => {
     socket.on("id", (data) => {
       setID(data["id"]);
       setName(data["name"]);
+      console.log(id)
     });
+
   }, [msgs, id, socket]);
 
   useEffect(() => {

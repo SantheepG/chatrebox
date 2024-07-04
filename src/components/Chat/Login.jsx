@@ -17,10 +17,10 @@ const Login = ({ setUser }) => {
 
   return (
     <div className="min-h-screen bg-indigo-50 flex justify-center items-center">
-      <div className="animate-view-spin-from-left absolute w-60 h-60 rounded-xl bg-indigo-300 -top-5 -left-16 z-0 transform rotate-45 hidden md:block"></div>
-      <div className="animate-view-spin-from-right absolute w-48 h-48 rounded-xl bg-indigo-300 -bottom-6 -right-10 transform rotate-12 hidden md:block"></div>
-      <div class="animate-slide-down relative py-3 sm:max-w-xl sm:mx-auto">
-        <div class="absolute inset-0 bg-gradient-to-b from-purple-200 to-purple-300 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+      <div className="animate-view-spin-from-left absolute w-60 h-60 rounded-xl bg-indigo-300 -top-5 -left-16 z-0 transform rotate-45 hidden md:block shadow-lg"></div>
+      <div className="animate-view-spin-from-right absolute w-48 h-48 rounded-xl bg-indigo-300 -bottom-6 -right-10 transform rotate-12 hidden md:block shadow-lg"></div>
+      <div class="animate-view-content relative py-3 sm:max-w-xl sm:mx-auto">
+        <div class="animate-view-spin  absolute inset-0 bg-gradient-to-b from-purple-200 to-purple-300 shadow-2xl transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
         <div class="relative bg-white shadow-lg rounded-3xl px-20 py-16">
           <div class="max-w-md mx-auto">
             <div>
@@ -96,8 +96,8 @@ const Login = ({ setUser }) => {
           </div>
         </div>
       </div>
-      <div className="animate-view-spin-from-right w-40 h-40 absolute bg-purple-300 rounded-full top-0 right-12 hidden md:block"></div>
-      <div className="animate-view-spin-from-left w-20 h-40 absolute bg-purple-300 rounded-full bottom-20 left-10 transform rotate-45 hidden md:block"></div>
+      <div className="animate-view-spin-from-right w-40 h-40 absolute bg-gradient-to-b from-purple-200 to-purple-300 rounded-full top-0 right-12 hidden md:block shadow-lg "></div>
+      <div className="animate-view-spin-from-left w-20 h-40 absolute bg-gradient-to-t from-purple-200 to-purple-300 rounded-full bottom-20 left-10 transform rotate-45 hidden md:block shadow-lg"></div>
     </div>
   );
 };

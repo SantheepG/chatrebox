@@ -84,6 +84,20 @@
   }
 }
 
+@keyframes spin {
+  0% {
+    opacity: 0;
+    transform: translateX(0) rotate(-360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(10deg);
+  }
+}
+
+.animate-view-spin {
+  animation: spin 1s ease forwards;
+}
 
 .animate-view-spin-from-left {
   animation: spinFromLeft 1s ease forwards;
@@ -95,7 +109,7 @@
 
 
   .animate-view-content {
-  animation: viewContent 0.2s ease-in-out forwards;
+  animation: viewContent 0.5s ease-in-out forwards;
 }
 
   .animate-view-content-1 {
