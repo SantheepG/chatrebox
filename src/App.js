@@ -1,11 +1,13 @@
-import './App.css';
-import Main from './components/Main';
-import Login from './components/Chat/Login';
-import React, { useEffect, useState } from 'react';
+import "./App.css";
+import Main from "./components/Main";
+import Login from "./components/Chat/Login";
+import React, { useEffect, useState } from "react";
 
 function App() {
   const [name, setName] = useState("");
-  const [componentToRender, setComponentToRender] = useState(<Login setUser={(e) => setName(e)} />);
+  const [componentToRender, setComponentToRender] = useState(
+    <Login setUser={(e) => setName(e)} />
+  );
 
   useEffect(() => {
     if (name !== "") {
@@ -15,11 +17,7 @@ function App() {
     }
   }, [name]);
 
-  return (
-    <div>
-      {componentToRender}
-    </div>
-  );
+  return <div>{componentToRender}</div>;
 }
 
 export default App;

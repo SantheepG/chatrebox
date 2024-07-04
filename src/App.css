@@ -6,6 +6,28 @@
   scroll-behavior: smooth;
 }
 
+@keyframes slideDownFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInFromdown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(100%);
+    }
+  }
+  
   @keyframes viewContent {
     0% {
         opacity: 0;
@@ -18,6 +40,88 @@
     }
   }
 
+  @keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+    @keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes spinFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(60deg);
+  }
+}
+
+@keyframes rotateFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%) rotate(360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(60deg);
+  }
+}
+
+
+.animate-view-spin-from-left {
+  animation: spinFromLeft 1s ease forwards;
+}
+
+.animate-view-spin-from-right {
+  animation: rotateFromRight 0.5s ease forwards;
+}
+
+
   .animate-view-content {
   animation: viewContent 0.2s ease-in-out forwards;
-  }
+}
+
+  .animate-view-content-1 {
+  animation: viewContent 0.6s ease-in-out forwards;
+}
+  .animate-view-content-2 {
+  animation: viewContent 0.8s ease-in-out forwards;
+}
+  .animate-view-content-3 {
+  animation: viewContent 0.4s ease-in-out forwards;
+}
+  .animate-view-content-4 {
+  animation: viewContent 0.5s ease-in-out forwards;
+}
+.animate-slide-in-from-left {
+  animation: slideInFromLeft 0.2s ease forwards;
+}
+
+.animate-slide-in-from-right {
+  animation: slideInFromRight 0.2s ease forwards;
+}
+
+.animate-slide-down {
+  animation: slideDownFromTop 0.2s ease-in-out;
+}
+
+.animate-slide-in-from-down {
+  animation: slideInFromDown 0.2s ease-in-out;
+}
